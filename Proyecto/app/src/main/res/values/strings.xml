@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MiDoctor</string>
+    <string name="login_button">Iniciar Sesión</string>
+    <string name="register_button">Registrarse</string>
 </resources>
