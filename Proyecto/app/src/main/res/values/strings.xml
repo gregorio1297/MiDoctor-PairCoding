@@ -2,4 +2,8 @@
     <string name="app_name">MiDoctor</string>
     <string name="login_button">Iniciar Sesión</string>
     <string name="register_button">Registrarse</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_servicios">Servicios</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
