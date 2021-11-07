@@ -35,13 +35,13 @@ public class LoginActivity extends AppCompatActivity {
                 else{
                     Boolean check=db.checkuserpassword(user,pass);
                     if (check==true){
-                        Toast.makeText(LoginActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Bienvenido "+user, Toast.LENGTH_SHORT).show();
                         Intent intent=new Intent(getApplicationContext(),PrincipalActivity.class);
                         startActivity(intent);
 
                     }
                     else{
-                        Toast.makeText(LoginActivity.this, "Erro, verificar usuario o contraseña", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Error, verificar usuario o contraseña", Toast.LENGTH_SHORT).show();
                     }
                 }
 

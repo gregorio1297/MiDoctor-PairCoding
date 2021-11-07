@@ -34,7 +34,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String apel=apellido.getText().toString();
                 String user=username.getText().toString();
                 String pass=password.getText().toString();
-                Integer cont=2;
+                Integer cont=5;
                 Usuario obj=new Usuario(cont,nom,apel,user,pass);
                 if (nom.equals("")||apel.equals("")||user.equals("")||pass.equals("")){
                     Toast.makeText(RegisterActivity.this, "Rellenar todos los datos", Toast.LENGTH_SHORT).show();

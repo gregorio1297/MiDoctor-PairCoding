@@ -5,5 +5,8 @@
     <string name="title_activity_principal">PrincipalActivity</string>
     <string name="title_historial">Historial</string>
     <string name="title_servicios">Servicios</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="savechanges">Guardar Cambios</string>
+    <string name="changepass">Cambiar Constraseña</string>
+    <string name="logout">Cerrar Sesión</string>
 </resources>
