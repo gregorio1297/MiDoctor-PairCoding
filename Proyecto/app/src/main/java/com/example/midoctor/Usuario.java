@@ -22,6 +22,8 @@ public class Usuario {
         this.password = password;
     }
 
+
+
     //Propiedades
 
     public int getId() {
