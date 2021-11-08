@@ -1,9 +1,12 @@
 package com.example.midoctor.ui.Servicios;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,6 +16,9 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 
+import com.example.midoctor.COV19;
+import com.example.midoctor.LoginActivity;
+import com.example.midoctor.R;
 import com.example.midoctor.databinding.FragmentServiciosBinding;
 
 public class ServiciosFragment extends Fragment {
@@ -20,8 +26,13 @@ public class ServiciosFragment extends Fragment {
     private ServiciosViewModel serviciosViewModel;
     private FragmentServiciosBinding binding;
 
+
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+
+
         serviciosViewModel =
                 new ViewModelProvider(this).get(ServiciosViewModel.class);
 
@@ -36,7 +47,10 @@ public class ServiciosFragment extends Fragment {
             }
         });
         return root;
+
     }
+
+
 
     @Override
     public void onDestroyView() {

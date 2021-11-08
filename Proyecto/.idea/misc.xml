@@ -17,19 +17,26 @@
         <entry key="..\:/Users/Lenovo/Documents/8vo Semestre/Desarrollo de aplicaciones para dispositivos moviles/Proyecto/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/Documents/8vo Semestre/Desarrollo de aplicaciones para dispositivos moviles/Proyecto/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/fragment_servicios.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Lenovo/Documents/8vo Semestre/Desarrollo de aplicaciones para dispositivos moviles/Proyecto/MiDoctor-PairCoding/Proyecto/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/activity_ambu.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/activity_ambulancia.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/activity_cov19.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/activity_covid.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/activity_login.xml" value="0.2640625" />
         <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/activity_principal.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/activity_vaccine.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/activity_vacunacion.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/fragment_dashboard.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/fragment_historial.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/fragment_notifications.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/fragment_perfil.xml" value="0.25" />
+        <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/layout/fragment_servicios.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/grego/Desktop/RESP/8/APP/PF/MiDoctor-PairCoding/Proyecto/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27291666666666664" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
