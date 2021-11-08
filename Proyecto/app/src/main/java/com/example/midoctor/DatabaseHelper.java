@@ -20,6 +20,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     //Nombre de la tabla usuarios
     private static final String TABLE_USERS = "users";
+    private static final String TABLE_SERVICES = "services";
+    private static final String TABLE_HISTORY = "history";
 
     //Nombre de las columnas de la tabla users
     private static final String KEY_ID = "id";
@@ -27,6 +29,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_AP = "apellido";
     private static final String KEY_EMAIL = "email";
     private static final String KEY_PASSWORD = "password";
+
+    ////Nombre de las columnas de la tabla services
+    private static final String KEY_IDSER = "id";
+    private static final String KEY_NOMSER = "nombreservicio";
+    private static final String KEY_DESCR = "descripcion";
+    private static final String KEY_PREC = "precio";
+    private static final String KEY_IDFK = "idusuario";
 
     //Constructor
     public DatabaseHelper(Context context){
@@ -44,7 +53,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 +KEY_AP+ " TEXT,"
                 +KEY_EMAIL+ " TEXT,"
                 +KEY_PASSWORD+ " TEXT)";
+
+        String CREATE_SERVICES_TABLE = "CREATE TABLE  "
+                +TABLE_SERVICES+"("+KEY_IDSER+ " INTEGER PRIMARY KEY,"
+                +KEY_NOMSER+ " TEXT,"
+                +KEY_DESCR+ " TEXT,"
+                +KEY_PREC+ " TEXT,"
+                +KEY_IDFK+ " INTEGER)";
+
         db.execSQL(CREATE_USERS_TABLE);
+        db.execSQL(CREATE_SERVICES_TABLE);
 
     }
 
@@ -55,6 +73,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         //Borra tablas antiguas si existen
         db.execSQL("DROP TABLE IF EXISTS " +
                 TABLE_USERS);
+
+        db.execSQL("DROP TABLE IF EXISTS " +
+                TABLE_SERVICES);
+
         //Crear tabla otra vez
         onCreate(db);
 
