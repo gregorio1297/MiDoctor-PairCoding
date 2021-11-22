@@ -12,4 +12,14 @@
     <string name="btnadquirir">Adquirir Prueba</string>
     <string name="btnaddamb">Adquirir Ambulancia</string>
     <string name="btncitavacuna">Realizar Cita</string>
+    <string name="btnfecha">Fecha</string>
+    <string name="btnhora">Hora</string>
+    <string name="btnaddvac">Adquirir Vacuna</string>
+
+    <string-array name="vacunas">
+        <item>Difteria</item>
+        <item>Hepatitis A</item>
+        <item>Hepatitis B</item>
+        <item>COVID</item>
+    </string-array>
 </resources>

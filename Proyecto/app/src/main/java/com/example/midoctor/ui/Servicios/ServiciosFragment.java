@@ -21,6 +21,7 @@ import com.example.midoctor.COV19;
 import com.example.midoctor.LoginActivity;
 import com.example.midoctor.R;
 import com.example.midoctor.Servicios;
+import com.example.midoctor.VACCINE;
 import com.example.midoctor.databinding.FragmentServiciosBinding;
 
 public class ServiciosFragment extends Fragment {
@@ -45,7 +46,7 @@ public class ServiciosFragment extends Fragment {
         mVacunacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent vac=new Intent(getActivity(),COV19.class);
+                    Intent vac=new Intent(getActivity(), VACCINE.class);
                 startActivity(vac);
             }
         });
