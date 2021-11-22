@@ -70,6 +70,8 @@
         android:id="@+id/btnadquirir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/aquagreen"
+        android:onClick="AdquirirPrueba"
         android:text="@string/btnadquirir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

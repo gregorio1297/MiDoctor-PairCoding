@@ -32,6 +32,7 @@
         android:id="@+id/btncitavacuna"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/aquagreen"
         android:text="@string/btncitavacuna"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

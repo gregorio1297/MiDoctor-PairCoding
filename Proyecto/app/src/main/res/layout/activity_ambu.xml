@@ -45,6 +45,8 @@
         android:id="@+id/btnaddamb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/aquagreen"
+        android:onClick="AdquirirAmbu"
         android:text="@string/btnaddamb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
