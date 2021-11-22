@@ -9,4 +9,7 @@
     <string name="savechanges">Guardar Cambios</string>
     <string name="changepass">Cambiar Constraseña</string>
     <string name="logout">Cerrar Sesión</string>
+    <string name="btnadquirir">Adquirir Prueba</string>
+    <string name="btnaddamb">Adquirir Ambulancia</string>
+    <string name="btncitavacuna">Realizar Cita</string>
 </resources>

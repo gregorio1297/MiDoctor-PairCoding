@@ -6,47 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.Servicios.ServiciosFragment">
 
-    <TextView
-        android:id="@+id/text_dashboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
-
-    <ImageButton
-        android:id="@+id/ambulancia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="ambulancia"
-        android:src="@drawable/ambulancia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452" />
-
-    <TextView
-        android:id="@+id/textambulancia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ambulancia"
-        app:layout_constraintBottom_toTopOf="@+id/covid"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ambulancia"
-        app:layout_constraintVertical_bias="0.435" />
-
     <ImageButton
         android:id="@+id/vacunacion"
         android:layout_width="wrap_content"
@@ -58,7 +17,44 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.104" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textvacunacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vacunacion"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ambulancia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vacunacion"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <ImageButton
+        android:id="@+id/ambulancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="ambulancia"
+        android:src="@drawable/ambulancia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <TextView
+        android:id="@+id/textambulancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambulancia"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/covid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ambulancia"
+        app:layout_constraintVertical_bias="0.161" />
 
     <ImageButton
         android:id="@+id/covid"
@@ -71,28 +67,19 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.791" />
+        app:layout_constraintVertical_bias="0.761" />
 
     <TextView
         android:id="@+id/textcovid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Prueba COVID-19"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/covid"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textvacunacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vacunacion"
-        app:layout_constraintBottom_toTopOf="@+id/ambulancia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vacunacion"
-        app:layout_constraintVertical_bias="0.456" />
+        app:layout_constraintVertical_bias="0.083" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,45 +16,59 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 
+import com.example.midoctor.AMBU;
 import com.example.midoctor.COV19;
 import com.example.midoctor.LoginActivity;
 import com.example.midoctor.R;
+import com.example.midoctor.Servicios;
 import com.example.midoctor.databinding.FragmentServiciosBinding;
 
 public class ServiciosFragment extends Fragment {
 
-    private ServiciosViewModel serviciosViewModel;
-    private FragmentServiciosBinding binding;
-
-
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-
-
-
-        serviciosViewModel =
-                new ViewModelProvider(this).get(ServiciosViewModel.class);
-
-        binding = FragmentServiciosBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-
-        final TextView textView = binding.textDashboard;
-        serviciosViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+    private ImageButton mVacunacion;
+    private ImageButton mAmbulancia;
+    private ImageButton mCov19;
+    public ServiciosFragment(){
 
     }
-
 
 
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
+    public View onCreateView(LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_servicios, container, false);
+
+        mVacunacion=view.findViewById(R.id.vacunacion);
+        mAmbulancia=view.findViewById(R.id.ambulancia);
+        mCov19=view.findViewById(R.id.covid);
+
+        mVacunacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent vac=new Intent(getActivity(),COV19.class);
+                startActivity(vac);
+            }
+        });
+
+        mAmbulancia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent amb=new Intent(getActivity(), AMBU.class);
+                startActivity(amb);
+            }
+        });
+
+        mCov19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cov=new Intent(getActivity(), COV19.class);
+                startActivity(cov);
+            }
+        });
+
+
+        return view;
+
     }
+
 }

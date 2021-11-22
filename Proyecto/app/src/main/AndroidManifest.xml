@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiDoctor">
         <activity
+            android:name=".AdquirirVacuna"
+            android:exported="false" />
+        <activity
+            android:name=".AdquirirAmbulacia"
+            android:exported="false" />
+        <activity
+            android:name=".AdquirirPrueba"
+            android:exported="false" />
+        <activity
             android:name=".VACCINE"
             android:exported="true" />
         <activity
