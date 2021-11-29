@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
     <ImageView
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/green"
         android:onClick="SiguienteLog"
         android:text="@string/login_button"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/green"
         android:onClick="SiguienteReg"
         android:text="@string/register_button"
         app:layout_constraintBottom_toBottomOf="parent"

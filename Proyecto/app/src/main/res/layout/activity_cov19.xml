@@ -3,13 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Prueba COVID-19"
+        android:textColor="@color/gray"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,6 +38,7 @@
         android:layout_width="351dp"
         android:layout_height="52dp"
         android:text="-Se realiza en pacientes con síntomas o sospechas de contagio."
+        android:textColor="@color/gray"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,6 +51,7 @@
         android:layout_width="351dp"
         android:layout_height="52dp"
         android:text="-Se realiza por técnica PCR."
+        android:textColor="@color/gray"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,6 +64,7 @@
         android:layout_width="351dp"
         android:layout_height="52dp"
         android:text="-El tiempo de entrega es de 72 hrs."
+        android:textColor="@color/gray"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,6 +76,7 @@
         android:id="@+id/btnadquirir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
         android:text="@string/btnadquirir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

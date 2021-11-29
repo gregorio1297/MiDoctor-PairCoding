@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ambulancia"
+        android:textColor="@color/gray"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +36,7 @@
         android:layout_width="315dp"
         android:layout_height="197dp"
         android:text="En este tipo de servicio brindamos al paciente la atención y vigilancia adecuada dependiendo del padecimiento durante el traslado, el personal tiene a la mano el equipo medico necesario para mantener estable al paciente y evitar así su deterioro."
+        android:textColor="@color/gray"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,6 +48,7 @@
         android:id="@+id/btnaddamb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
         android:text="@string/btnaddamb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
