@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -19,7 +21,7 @@ import java.util.Calendar;
 
 public class AdquirirVacuna extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    Button mfecha, mhora,addambsig;
+    Button mfecha, mhora,addvac;
     EditText efecha,ehora;
     private int dia,mes,anio,hora,minutos;
     @Override
@@ -30,7 +32,7 @@ public class AdquirirVacuna extends AppCompatActivity implements AdapterView.OnI
         mhora=(Button) findViewById(R.id.btnhoraa);
         efecha=(EditText) findViewById(R.id.eFechaa);
         ehora=(EditText) findViewById(R.id.eHoraa);
-        addambsig=(Button) findViewById(R.id.btnAddAmb);
+        addvac=(Button) findViewById(R.id.btnaddvac);
 
         Spinner spinner=findViewById(R.id.spinnervacuna);
         ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this,R.array.vacunas, android.R.layout.simple_spinner_item);
@@ -77,6 +79,13 @@ public class AdquirirVacuna extends AppCompatActivity implements AdapterView.OnI
                 }
             }
         });
+
+        addvac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Agregar();
+            }
+        });
     }
 
     @Override
@@ -87,6 +96,37 @@ public class AdquirirVacuna extends AppCompatActivity implements AdapterView.OnI
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
+
+    public void Agregar(){
+        Calendar cal=Calendar.getInstance();
+        boolean val=false;
+        Intent inte=null;
+        while (val==false){
+            try {
+                cal.set(Calendar.YEAR,anio);
+                cal.set(Calendar.MONTH,mes);
+                cal.set(Calendar.DAY_OF_MONTH,dia);
+
+                cal.set(Calendar.HOUR_OF_DAY, hora);
+                cal.set(Calendar.MINUTE,minutos);
+
+                inte=new Intent(Intent.ACTION_EDIT);
+                inte.setType("vnd.android.cursor.item/event");
+                inte.putExtra(CalendarContract.Events.ALL_DAY,true);
+                inte.putExtra(CalendarContract.Events.TITLE,R.layout.support_simple_spinner_dropdown_item);
+                inte.putExtra(CalendarContract.Events.DESCRIPTION,"Vacuna");
+                inte.putExtra(CalendarContract.Events.EVENT_LOCATION,"Clinica 27");
+
+                startActivity(inte);
+                val=true;
+            }catch (Exception e){
+                ehora.setText("");
+                efecha.setText("");
+                Toast.makeText(getApplicationContext(), "Fecha u hora invalidad", Toast.LENGTH_SHORT).show();
+            }
+        }
 
     }
 }

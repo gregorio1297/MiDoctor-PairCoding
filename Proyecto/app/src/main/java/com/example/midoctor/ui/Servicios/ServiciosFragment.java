@@ -40,7 +40,7 @@ public class ServiciosFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_servicios, container, false);
 
         mVacunacion=view.findViewById(R.id.vacunacion);
-        mAmbulancia=view.findViewById(R.id.ambulancia);
+
         mCov19=view.findViewById(R.id.covid);
 
         mVacunacion.setOnClickListener(new View.OnClickListener() {
@@ -51,13 +51,7 @@ public class ServiciosFragment extends Fragment {
             }
         });
 
-        mAmbulancia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent amb=new Intent(getActivity(), AMBU.class);
-                startActivity(amb);
-            }
-        });
+
 
         mCov19.setOnClickListener(new View.OnClickListener() {
             @Override
