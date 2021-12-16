@@ -54,9 +54,9 @@ public class AdquirirVacuna extends AppCompatActivity implements AdapterView.OnI
                             efecha.setText(i2+"/"+(i1+1)+"/"+i);
                         }
                     }
-                            ,dia,
+                            ,anio,
                             mes,
-                            anio);
+                            dia);
                     datePickerDialog.show();
                 }
             }

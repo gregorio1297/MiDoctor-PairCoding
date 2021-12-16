@@ -10,4 +10,7 @@
     <color name="green">#bdecb6</color>
     <color name="blue">#5d9b9b</color>
     <color name="gray">#828282</color>
+    <color name="rojo">#ff0000</color>
+    <color name="naranja">#ff4000</color>
+    <color name="naranja2">#ff8000</color>
 </resources>

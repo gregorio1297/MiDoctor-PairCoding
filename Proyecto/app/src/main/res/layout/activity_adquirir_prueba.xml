@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.055" />
 
     <Button
-        android:id="@+id/btnfecha"
+        android:id="@+id/btnfechap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/green"
@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.145" />
 
     <Button
-        android:id="@+id/btnhora"
+        android:id="@+id/btnhorap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/green"
@@ -43,11 +43,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnfecha"
+        app:layout_constraintTop_toBottomOf="@+id/btnfechap"
         app:layout_constraintVertical_bias="0.094" />
 
     <EditText
-        android:id="@+id/eFecha"
+        android:id="@+id/eFechap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -56,12 +56,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.375"
-        app:layout_constraintStart_toEndOf="@+id/btnfecha"
+        app:layout_constraintStart_toEndOf="@+id/btnfechap"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.297" />
 
     <EditText
-        android:id="@+id/eHora"
+        android:id="@+id/eHorap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -70,12 +70,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.375"
-        app:layout_constraintStart_toEndOf="@+id/btnhora"
+        app:layout_constraintStart_toEndOf="@+id/btnhorap"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.422" />
 
     <Button
-        android:id="@+id/btnAddAmb"
+        android:id="@+id/btncovadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/green"

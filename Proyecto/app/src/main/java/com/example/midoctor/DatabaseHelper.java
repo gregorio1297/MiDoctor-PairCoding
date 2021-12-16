@@ -179,4 +179,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    public Usuario verusuario(){
+        Usuario usuario = null;
+        SQLiteDatabase db=this.getWritableDatabase();
+
+        String selectQuery="SELECT * FROM "+TABLE_USERS+" WHERE id = 5";
+
+        Cursor cursor=db.rawQuery(selectQuery,null);
+        //Iterar sobre todas ;as filas y las agrega a la lista
+        if (cursor.moveToFirst()){
+            usuario=new Usuario();
+            usuario.setId(Integer.parseInt(cursor.getString(0)));
+            usuario.setNombre(cursor.getString(1));
+            usuario.setApellido(cursor.getString(2));
+            usuario.setEmail(cursor.getString(3));
+            usuario.setPassword(cursor.getString(4));
+
+        }
+
+        return usuario;
+    }
+
 }
