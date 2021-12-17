@@ -58,14 +58,14 @@
 
     <ImageButton
         android:id="@+id/btnmodperfil"
-        android:layout_width="101dp"
-        android:layout_height="117dp"
+        android:layout_width="115dp"
+        android:layout_height="143dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnagvac"
-        app:layout_constraintVertical_bias="0.342"
+        app:layout_constraintVertical_bias="0.382"
         tools:srcCompat="@drawable/logo" />
 
     <TextView

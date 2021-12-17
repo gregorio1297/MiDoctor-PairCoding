@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/nombre_user3"
+        android:id="@+id/nombre_usermod"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -40,7 +40,7 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <EditText
-        android:id="@+id/lastname_user3"
+        android:id="@+id/lastname_usermod"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -54,11 +54,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_user3"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_usermod"
         app:layout_constraintVertical_bias="0.047" />
 
     <EditText
-        android:id="@+id/user_name3"
+        android:id="@+id/user_namemod"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -71,11 +71,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastname_user3"
+        app:layout_constraintTop_toBottomOf="@+id/lastname_usermod"
         app:layout_constraintVertical_bias="0.062" />
 
     <EditText
-        android:id="@+id/password3"
+        android:id="@+id/passwordmod"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -88,7 +88,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_name3"
+        app:layout_constraintTop_toBottomOf="@+id/user_namemod"
         app:layout_constraintVertical_bias="0.094" />
 
     <Button
@@ -103,7 +103,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password3"
+        app:layout_constraintTop_toBottomOf="@+id/passwordmod"
         app:layout_constraintVertical_bias="0.062" />
 
 
@@ -114,7 +114,7 @@
         android:layout_height="wrap_content"
         android:text="Nombre:"
         android:textColor="@color/gray"
-        app:layout_constraintBottom_toTopOf="@+id/nombre_user3"
+        app:layout_constraintBottom_toTopOf="@+id/nombre_usermod"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,7 +127,7 @@
         android:layout_height="wrap_content"
         android:text="Email:"
         android:textColor="@color/gray"
-        app:layout_constraintBottom_toTopOf="@+id/user_name3"
+        app:layout_constraintBottom_toTopOf="@+id/user_namemod"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:text="Contraseña:"
         android:textColor="@color/gray"
-        app:layout_constraintBottom_toTopOf="@+id/password3"
+        app:layout_constraintBottom_toTopOf="@+id/passwordmod"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
@@ -153,7 +153,7 @@
         android:layout_height="wrap_content"
         android:text="Apellidos:"
         android:textColor="@color/gray"
-        app:layout_constraintBottom_toTopOf="@+id/lastname_user3"
+        app:layout_constraintBottom_toTopOf="@+id/lastname_usermod"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"

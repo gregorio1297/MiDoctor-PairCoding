@@ -15,9 +15,18 @@ public class Menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        btnmedicamentos=findViewById(R.id.btnmedicamentos);
         btnpruebacov=findViewById(R.id.btnprucov19);
         btnvacu=findViewById(R.id.btnagvac);
         btnmodficar=findViewById(R.id.btnmodperfil);
+
+        btnmedicamentos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent int1=new Intent(getApplicationContext(),RegMed.class);
+                startActivity(int1);
+            }
+        });
 
         btnpruebacov.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -13,7 +13,7 @@ import java.util.List;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     //Version de la base de datos
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
     //Nombre de la base de datos
     private static final String DATABASE_NAME = "MiDoctor";
@@ -182,7 +182,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Usuario usuario = null;
         SQLiteDatabase db=this.getWritableDatabase();
 
-        String selectQuery="SELECT * FROM "+TABLE_USERS+" WHERE id = 5";
+        String selectQuery="SELECT * FROM "+TABLE_USERS+" WHERE id = 1";
 
         Cursor cursor=db.rawQuery(selectQuery,null);
         //Iterar sobre todas ;as filas y las agrega a la lista
