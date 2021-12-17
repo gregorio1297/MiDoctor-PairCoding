@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue"
     android:orientation="vertical"
     tools:context=".VerMed">
 
@@ -12,7 +13,8 @@
         android:id="@+id/viewnombremedicamento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre Medicamento" />
+        android:text="Nombre Medicamento"
+        android:textColor="@color/white" />
 
     <EditText
         android:id="@+id/txnommed"
@@ -20,13 +22,15 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:labelFor="@+id/viewnombremedicamento" />
+        android:labelFor="@+id/viewnombremedicamento"
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/viewhoramedicamento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hora Medicamento" />
+        android:text="Hora Medicamento"
+        android:textColor="@color/white" />
 
     <EditText
         android:id="@+id/txthoramedicamento"
@@ -34,16 +38,20 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:labelFor="@+id/viewhoramedicamento" />
+        android:labelFor="@+id/viewhoramedicamento"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/btnmodmed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
         android:text="Modificar Medicamento" />
+
     <Button
         android:id="@+id/btnelimmed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
         android:text="Eliminar Medicamento" />
 </LinearLayout>
