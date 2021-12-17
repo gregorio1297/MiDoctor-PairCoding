@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:Android="http://schemas.android.com/apk/distribution"
     package="com.example.midoctor">
+
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
@@ -13,10 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiDoctor">
         <activity
-            android:name=".AdquirirVacuna"
+            android:name=".ModDatos"
             android:exported="false" />
         <activity
-            android:name=".AdquirirAmbulacia"
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
+            android:name=".AdquirirVacuna"
             android:exported="false" />
         <activity
             android:name=".AdquirirPrueba"
@@ -25,15 +29,8 @@
             android:name=".VACCINE"
             android:exported="true" />
         <activity
-            android:name=".AMBU"
-            android:exported="true" />
-        <activity
             android:name=".COV19"
             android:exported="true" />
-        <activity
-            android:name=".PrincipalActivity"
-            android:exported="true"
-            android:label="@string/title_activity_principal" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true" />

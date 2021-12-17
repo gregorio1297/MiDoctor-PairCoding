@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
                     Boolean check=db.checkuserpassword(user,pass);
                     if (check==true){
                         Toast.makeText(LoginActivity.this, "Bienvenido "+user, Toast.LENGTH_SHORT).show();
-                        Intent intent=new Intent(getApplicationContext(),PrincipalActivity.class);
+                        Intent intent=new Intent(getApplicationContext(),Menu.class);
                         startActivity(intent);
 
                     }

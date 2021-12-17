@@ -20,8 +20,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     //Nombre de la tabla usuarios
     private static final String TABLE_USERS = "users";
-    private static final String TABLE_SERVICES = "services";
-    private static final String TABLE_HISTORY = "history";
+    public static final String TABLE_MEDICINE = "medecines";
+
 
     //Nombre de las columnas de la tabla users
     private static final String KEY_ID = "id";
@@ -31,11 +31,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_PASSWORD = "password";
 
     ////Nombre de las columnas de la tabla services
-    private static final String KEY_IDSER = "id";
-    private static final String KEY_NOMSER = "nombreservicio";
-    private static final String KEY_DESCR = "descripcion";
-    private static final String KEY_PREC = "precio";
-    private static final String KEY_IDFK = "idusuario";
+    private static final String KEY_IDMED = "id";
+    private static final String KEY_NOMMED = "nombremed";
+    private static final String KEY_MEDHOR = "horamed";
 
     //Constructor
     public DatabaseHelper(Context context){
@@ -54,15 +52,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 +KEY_EMAIL+ " TEXT,"
                 +KEY_PASSWORD+ " TEXT)";
 
-        String CREATE_SERVICES_TABLE = "CREATE TABLE  "
-                +TABLE_SERVICES+"("+KEY_IDSER+ " INTEGER PRIMARY KEY,"
-                +KEY_NOMSER+ " TEXT,"
-                +KEY_DESCR+ " TEXT,"
-                +KEY_PREC+ " TEXT,"
-                +KEY_IDFK+ " INTEGER)";
+        String CREATE_MEDICINE_TABLE = "CREATE TABLE  "
+                +TABLE_MEDICINE+"("+KEY_IDMED+ " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                +KEY_NOMMED+ " TEXT,"
+                +KEY_MEDHOR+ " TEXT)";
 
         db.execSQL(CREATE_USERS_TABLE);
-        db.execSQL(CREATE_SERVICES_TABLE);
+        db.execSQL(CREATE_MEDICINE_TABLE);
 
     }
 
@@ -75,7 +71,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 TABLE_USERS);
 
         db.execSQL("DROP TABLE IF EXISTS " +
-                TABLE_SERVICES);
+                TABLE_MEDICINE);
 
         //Crear tabla otra vez
         onCreate(db);
@@ -96,6 +92,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.insert(TABLE_USERS,null,values);
         db.close();//Cerrar la conexion con la base de datos
     }
+
+
+
     //Read, Obtener todos los contactos
     public Usuario getUsers(int id){
         SQLiteDatabase db = this.getReadableDatabase();
