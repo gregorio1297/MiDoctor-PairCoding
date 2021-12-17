@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiDoctor">
         <activity
+            android:name=".VerMed"
+            android:exported="false" />
+        <activity
             android:name=".RegMed"
             android:exported="false" />
         <activity

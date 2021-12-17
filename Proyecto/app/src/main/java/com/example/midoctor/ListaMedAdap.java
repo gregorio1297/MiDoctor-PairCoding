@@ -1,5 +1,7 @@
 package com.example.midoctor;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +45,16 @@ public class ListaMedAdap extends RecyclerView.Adapter<ListaMedAdap.MedViewHold>
 
             viewNombreMed = itemView.findViewById(R.id.viewNombreMed);
             viewHoraMed=itemView.findViewById(R.id.viewHoraMed);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Context context=view.getContext();
+                    Intent intent=new Intent(context,VerMed.class);
+                    intent.putExtra("ID",listamedicamentos.get(getAdapterPosition()).getId());
+                    context.startActivity(intent);
+                }
+            });
 
         }
     }

@@ -134,6 +134,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     //Update, Actualiza un contacto
     public void updateUsers(int id, String nombre, String apellido, String email, String password){
+        boolean correcto=false;
+
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(KEY_NOM, nombre);

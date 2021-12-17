@@ -2,6 +2,7 @@ package com.example.midoctor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String user=username.getText().toString();
                 String pass=password.getText().toString();
+                Context context=view.getContext();
                 if (user.equals("")||pass.equals("")){
                     Toast.makeText(LoginActivity.this, "Llenar todos los campos para inicar sesion", Toast.LENGTH_SHORT).show();
                 }
@@ -36,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
                     Boolean check=db.checkuserpassword(user,pass);
                     if (check==true){
                         Toast.makeText(LoginActivity.this, "Bienvenido "+user, Toast.LENGTH_SHORT).show();
-                        Intent intent=new Intent(getApplicationContext(),Menu.class);
+                        Intent intent=new Intent(context,Menu.class);
                         startActivity(intent);
 
                     }

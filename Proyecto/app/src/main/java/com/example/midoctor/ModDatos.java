@@ -2,9 +2,12 @@ package com.example.midoctor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class ModDatos extends AppCompatActivity {
 
@@ -28,6 +31,18 @@ public class ModDatos extends AppCompatActivity {
         txtape.setText(user.getApellido());
         txtusua.setText(user.getEmail());
         txtpass.setText(user.getPassword());
+
+        btnmod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                db.updateUsers(1,txtnom.getText().toString(),txtape.getText().toString(),txtusua.getText().toString()
+                        ,txtpass.getText().toString());
+
+                Toast.makeText(ModDatos.this, "Modificacion exitosa", Toast.LENGTH_SHORT).show();
+                Intent inte=new Intent(getApplicationContext(),Menu.class);
+                startActivity(inte);
+            }
+        });
 
     }
 }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerMed">
+
+
+    <TextView
+        android:id="@+id/viewnombremedicamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre Medicamento" />
+
+    <EditText
+        android:id="@+id/txnommed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/viewnombremedicamento" />
+
+    <TextView
+        android:id="@+id/viewhoramedicamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora Medicamento" />
+
+    <EditText
+        android:id="@+id/txthoramedicamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/viewhoramedicamento" />
+
+    <Button
+        android:id="@+id/btnmodmed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar Medicamento" />
+    <Button
+        android:id="@+id/btnelimmed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Medicamento" />
+</LinearLayout>

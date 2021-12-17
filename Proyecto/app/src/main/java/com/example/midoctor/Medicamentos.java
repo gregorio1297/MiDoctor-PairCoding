@@ -48,4 +48,66 @@ public class Medicamentos extends DatabaseHelper{
         cursormed.close();
         return listamed;
     }
+
+    public Med vermed(int id){
+        DatabaseHelper db=new DatabaseHelper(context);
+        SQLiteDatabase dbbb=db.getWritableDatabase();
+
+
+        Med medi=null;
+        Cursor cursormed=null;
+
+        cursormed=dbbb.rawQuery("SELECT * FROM "+TABLE_MEDICINE+" WHERE id = "+id+" LIMIT 1",null);
+        if (cursormed.moveToFirst()){
+
+                medi=new Med();
+                medi.setId(cursormed.getInt(0));
+                medi.setNombremed(cursormed.getString(1));
+                medi.setHoramed(cursormed.getString(2));
+
+
+        }
+        cursormed.close();
+        return medi;
+    }
+
+    public boolean editarMedicamento(int id,String nombre, String hora){
+        boolean correcto=false;
+
+        DatabaseHelper db=new DatabaseHelper(context);
+        SQLiteDatabase dbbb=db.getWritableDatabase();
+        try {
+            dbbb.execSQL("UPDATE "+TABLE_MEDICINE+" SET nombremed = '"+nombre+"', horamed = '"+hora+"' WHERE id='"+id+"' ");
+            correcto=true;
+        }catch (Exception ex){
+            ex.toString();
+            correcto=false;
+        }finally {
+            dbbb.close();
+        }
+
+
+        return correcto;
+    }
+
+    public boolean eliminarMedicamento(int id){
+        boolean correcto=false;
+
+        DatabaseHelper db=new DatabaseHelper(context);
+        SQLiteDatabase dbbb=db.getWritableDatabase();
+        try {
+            dbbb.execSQL("DELETE FROM "+TABLE_MEDICINE+" WHERE id = '"+id+"'");
+            correcto=true;
+        }catch (Exception ex){
+            ex.toString();
+            correcto=false;
+        }finally {
+            dbbb.close();
+        }
+
+
+        return correcto;
+    }
+
+
 }
